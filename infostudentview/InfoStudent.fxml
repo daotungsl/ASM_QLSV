@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="infostudentview.InfoStudentController">
+    <children>
+        <Label layoutX="277.0" layoutY="58.0" prefHeight="17.0" prefWidth="81.0" text="RollNumber" />
+        <Label layoutX="277.0" layoutY="113.0" prefHeight="17.0" prefWidth="81.0" text="Name" />
+        <Label layoutX="277.0" layoutY="172.0" prefHeight="17.0" prefWidth="81.0" text="Phone" />
+        <Label layoutX="277.0" layoutY="231.0" prefHeight="17.0" prefWidth="81.0" text="Email" />
+        <Button fx:id="btnEdit" layoutX="202.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleEdit" prefHeight="25.0" prefWidth="81.0" text="Edit" />
+        <Button fx:id="btnDelete" layoutX="351.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="25.0" prefWidth="81.0" text="Delete" />
+        <TextField fx:id="txtRollNumber" layoutX="393.0" layoutY="54.0" onKeyReleased="#onKeyReleasedRollNumber" prefHeight="25.0" prefWidth="209.0" />
+        <TextField fx:id="txtName" layoutX="393.0" layoutY="109.0" onKeyReleased="#onKeyReleasedName" prefHeight="25.0" prefWidth="209.0" />
+        <TextField fx:id="txtPhone" layoutX="393.0" layoutY="168.0" onKeyReleased="#onKeyReleasedPhone" prefHeight="25.0" prefWidth="209.0" />
+        <TextField fx:id="txtEmail" layoutX="393.0" layoutY="227.0" onKeyReleased="#onKeyReleasedEmail" prefHeight="25.0" prefWidth="209.0" />
+        <Label fx:id="labelTitle" layoutX="263.0" layoutY="14.0" prefHeight="25.0" prefWidth="161.0" text="INFO STUDENT" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="errRollNumber" layoutX="393.0" layoutY="84.0" prefHeight="17.0" prefWidth="243.0" textFill="#f50707" />
+        <Label fx:id="errName" layoutX="393.0" layoutY="139.0" prefHeight="17.0" prefWidth="243.0" textFill="#ff0e0e" />
+        <Label fx:id="errPhone" layoutX="391.0" layoutY="199.0" prefHeight="17.0" prefWidth="243.0" textFill="#f50b0b" />
+        <Label fx:id="errEmail" layoutX="391.0" layoutY="260.0" prefHeight="17.0" prefWidth="243.0" textFill="#f51414" />
+        <Label layoutX="277.0" layoutY="288.0" prefHeight="17.0" prefWidth="81.0" text="Avatar" />
+        <TextField fx:id="txtAvatar" layoutX="393.0" layoutY="284.0" prefHeight="25.0" prefWidth="128.0" />
+      <ImageView fx:id="imageView" fitHeight="250.0" fitWidth="228.0" layoutX="14.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="errReport" alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="321.0" prefHeight="20.0" prefWidth="155.0" textAlignment="CENTER" textFill="#0a9005">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="btnChoose" layoutX="523.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleChoose" text="Choose" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="588.0" layoutY="286.0" prefHeight="40.0" prefWidth="24.0" progress="0.0" visible="false" />
+    </children>
+</AnchorPane>
